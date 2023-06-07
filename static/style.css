@@ -1,0 +1,62 @@
+.chatbox {
+    height: 100%;
+    width: clamp(0px,100%,50em);
+    flex:1;
+    overflow-y: auto;
+}
+
+.bubble {
+    margin-top: 2px;
+    display: table;
+    width: 100%;
+}
+
+.bubble > p {
+    max-width: calc(45% - 30px);
+    width: max-content;
+    padding: 13px 15px;
+    border-radius: 25px;
+    margin: 0;
+    background-color: #ffffff;
+    float: right;
+}
+
+body {
+    background-color: #131d25;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 50px; 
+    flex-direction: column;
+    place-items: center;
+    margin: 0;
+    height:100vh;
+}
+
+.inputbox {
+    height: 100%;
+
+}
+
+
+
+input {
+
+
+}
+
+.inputbox > * {
+    all:unset;
+    height: 100%;
+    line-height: 1;
+    border: 0.2rem solid white;
+    padding: 0 0.5rem;
+    color:white;
+    border-radius: 0.5rem ;
+    height: 2.25rem;
+}
+
+input:focus{
+
+    border: 0.2rem solid blue;
+
+}
