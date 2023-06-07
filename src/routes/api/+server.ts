@@ -13,8 +13,10 @@ function send_to_all(message) {
 }
 
 export async function GET({ url }) {
-
+    console.log(url)
     if (url.pathname !== "/api") return
+
+    
 
     let id = randomUUID()
 
